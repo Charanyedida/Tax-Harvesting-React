@@ -80,9 +80,7 @@ ETH,10,3000,2021-11-20
 
 This tool is for educational purposes only and does not constitute tax, legal, or financial advice. Always consult with a qualified professional before making tax-related decisions. The calculations provided are estimates and may not reflect your actual tax situation.
 
-## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
 
