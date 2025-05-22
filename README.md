@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Tax Loss Harvesting Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Tax Harvesting App Screenshot](https://tax-harvesting-react.vercel.app/screenshot.png)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+A React-based web application that helps cryptocurrency investors optimize their tax strategy through tax loss harvesting. The tool allows users to visualize their portfolio holdings, select assets with losses, and see the potential tax savings from harvesting those losses.
 
-### `npm start`
+**Live Demo:** [https://tax-harvesting-react.vercel.app/](https://tax-harvesting-react.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Portfolio Visualization**: View all cryptocurrency holdings with current values and unrealized gains/losses
+- **Tax Impact Comparison**: Side-by-side comparison of pre-harvesting and post-harvesting tax scenarios
+- **Interactive Selection**: Toggle assets to include in tax loss harvesting strategy
+- **Savings Calculation**: Automatic calculation of potential tax savings
+- **CSV Import**: Import your portfolio data via CSV file
+- **Dark/Light Mode**: Toggle between color themes for comfortable viewing
+- **Educational Resources**: Detailed "How it works" modal explaining tax loss harvesting concepts
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: Frontend JavaScript library
+- **CSS Modules**: For component styling
+- **Papa Parse**: For CSV file parsing
+- **Lodash**: Utility functions
+- **Lucide React**: Icon library
+- **Vercel**: Deployment platform
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run this project locally:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/tax-harvesting-tool.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+   ```bash
+   cd tax-harvesting-tool
+   npm install
+   ```
 
-### `npm run eject`
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to Use
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **View Your Portfolio**: The app displays sample cryptocurrency holdings with their current values and unrealized gains/losses.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Select Assets**: Check the boxes next to assets you want to include in your tax loss harvesting strategy.
 
-## Learn More
+3. **See Tax Impact**: The "After Harvesting" section updates automatically to show the potential tax savings.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Import Your Data**: Click "Upload CSV file" to import your own portfolio data (sample CSV format provided below).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Learn More**: Click "How it works?" for detailed information about tax loss harvesting strategies.
 
-### Code Splitting
+## CSV Format
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To import your portfolio, use a CSV file with the following columns:
+- `symbol`: The cryptocurrency symbol (e.g., BTC, ETH)
+- `quantity`: The amount held
+- `purchase_price`: The price per unit when purchased
+- `purchase_date`: The date of purchase (YYYY-MM-DD format)
 
-### Analyzing the Bundle Size
+Example:
+```csv
+symbol,quantity,purchase_price,purchase_date
+BTC,0.5,45000,2022-01-15
+ETH,10,3000,2021-11-20
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Disclaimer
 
-### Making a Progressive Web App
+This tool is for educational purposes only and does not constitute tax, legal, or financial advice. Always consult with a qualified professional before making tax-related decisions. The calculations provided are estimates and may not reflect your actual tax situation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contact
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For questions or feedback, please contact the developer at [your-email@example.com](mailto:your-email@example.com).
