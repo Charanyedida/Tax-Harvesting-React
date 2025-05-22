@@ -1,6 +1,6 @@
 # Tax Loss Harvesting Tool
 
-![Tax Harvesting App Screenshot](https://tax-harvesting-react.vercel.app/screenshot.png)
+
 
 ## Overview
 
